@@ -6,6 +6,7 @@ url('https://cdn.jsdelivr.net/gh/Ratodo/Lib/fonts/AdobeCleanHanSC/AdobeCleanHanS
 url('https://cdn.jsdelivr.net/gh/Ratodo/Lib/fonts/AdobeCleanHanSC/AdobeCleanHanSC.woff2') format('woff2'),
 url('https://cdn.jsdelivr.net/gh/Ratodo/Lib/fonts/AdobeCleanHanSC/AdobeCleanHanSC.woff') format('woff'),
 url('https://cdn.jsdelivr.net/gh/Ratodo/Lib/fonts/AdobeCleanHanSC/AdobeCleanHanSC.ttf') format('truetype'),
+url('https://cdn.jsdelivr.net/gh/Ratodo/Lib/fonts/AdobeCleanHanSC/AdobeCleanHanSC.svg') format('svg'),
 font-weight: 400;
 font-style: normal;
 font-display: swap;
