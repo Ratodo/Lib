@@ -6,6 +6,9 @@
 # > JD Remove AD
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 # > Personal Setting
+RULE-SET,https://s.19991222.xyz/dbJy,Streaming,update-interval=604800
+RULE-SET,https://s.19991222.xyz/rXJ3,SocialMedia,update-interval=604800
+RULE-SET,https://s.19991222.xyz/6jGG,SocialMedia,update-interval=604800
 
 [URL Rewrite]
 # Redirect Google Search Service
