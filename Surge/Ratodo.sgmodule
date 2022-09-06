@@ -9,7 +9,6 @@ URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-
 RULE-SET,https://s.19991222.xyz/mA3z,Streaming,update-interval=604800
 RULE-SET,https://s.19991222.xyz/xFkX,SocialMedia,update-interval=604800
 RULE-SET,https://s.19991222.xyz/AeSi,SocialMedia,update-interval=604800
-DOMAIN-SET,https://s.19991222.xyz/bHtw,REJECT,update-interval=604800
 
 [URL Rewrite]
 # Redirect Google Search Service
