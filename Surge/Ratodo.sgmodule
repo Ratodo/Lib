@@ -1,0 +1,34 @@
+#!name=Personal Module - By Ratodo
+#!desc=A collection of personally organized scripts and other rules from Github.
+#!system=ios
+
+[Rule]
+# > JD Remove AD
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+# > Personal Setting
+
+[URL Rewrite]
+# Redirect Google Search Service
+^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 302
+# > Remove AD (From NobyDa)
+# Netease Music
+^https?:\/\/interface\.music\.163\.com\/eapi\/ad - reject
+^https?:\/\/iadmusicmat\.music.126.net\/.*jpg$ - reject
+^https?:\/\/p\.c\.music\.126.net\/.*jpg$ - reject
+# Meituan
+^https?:\/\/img\.meituan\.net\/midas\/ - reject
+^https?:\/\/img\.meituan\.net\/(display|midas)\/.+\.(gif|jpg) - reject
+^https?:\/\/img\.meituan\.net\/midas\/.*@\d{4}h - reject
+^https?:\/\/img\.meituan\.net\/display\/\w+\.jpg\.webp - reject
+# SMZDM
+^https?:\/\/api\.smzdm\.com\/v1\/util\/loading - reject
+^https?:\/\/api\.smzdm\.com\/v2\/util\/banner - reject
+^https?:\/\/api\.smzdm\.com\/v\d\/util\/loading - reject
+^https?:\/\/app-api\.smzdm\.com\/util\/loading - reject
+# IQIYI
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show - reject
+^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, www.google.cn, interface.music.163.com, iadmusicmat.music.126.net, p1.music.126.net, img.meituan.net, app-api.smzdm.com, api.smzdm.com, iface.iqiyi.com, act.vip.iqiyi.com
