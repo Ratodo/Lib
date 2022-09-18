@@ -4,6 +4,8 @@
 
 [Rule]
 # > Personal Setting
+DOMAIN-SUFFIX,19991222.xyz,Proxy
+DOMAIN-KEYWORD,flyert,DIRECT
 
 # > Apple
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list,DIRECT,update-interval=604800
