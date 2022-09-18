@@ -4,10 +4,18 @@
 
 [Rule]
 # > Personal Setting
-RULE-SET,https://s.19991222.xyz/3czj,DIRECT,update-interval=604800
-RULE-SET,https://s.19991222.xyz/mA3z,Streaming,update-interval=604800
-RULE-SET,https://s.19991222.xyz/xFkX,SocialMedia,update-interval=604800
-RULE-SET,https://s.19991222.xyz/AeSi,SocialMedia,update-interval=604800
+
+# > Apple
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list,DIRECT,update-interval=604800
+
+# > Oversea Streaming
+RULE-SET,https://raw.githubusercontent.com/Ratodo/Lib/master/Surge/Streaming.list,Streaming,update-interval=604800
+
+# > Twitter Telegram
+RULE-SET,https://raw.githubusercontent.com/Ratodo/Lib/master/Surge/SocialMedia.list,SocialMedia,update-interval=604800
+
+# > Spotify
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/Spotify.list,Spotify,update-interval=604800
 
 [URL Rewrite]
 # Redirect Google Search Service
