@@ -11,12 +11,13 @@ DOMAIN-KEYWORD,flyert,DIRECT
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list,Apple,update-interval=604800
 
 # > Telegram
-# RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,Telegram,update-interval=604800
+# RULE-SET,https://raw.githubusercontent.com/Ratodo/Lib/master/Surge/Telegram.list,Telegram,update-interval=604800
 
 # > Spotify
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/Spotify.list,Spotify,update-interval=604800
 
 [URL Rewrite]
+
 # Redirect Google Search Service
 ^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
