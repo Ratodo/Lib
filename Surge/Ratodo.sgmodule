@@ -4,17 +4,14 @@
 
 [Rule]
 # > Personal Setting
-DOMAIN-SUFFIX,19991222.xyz,Proxy
+DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 
 # > Apple
-RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list,DIRECT,update-interval=604800
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list,Apple,update-interval=604800
 
-# > Oversea Streaming
-# RULE-SET,https://raw.githubusercontent.com/Ratodo/Lib/master/Surge/Streaming.list,Streaming,update-interval=604800
-
-# > Twitter Telegram
-# RULE-SET,https://raw.githubusercontent.com/Ratodo/Lib/master/Surge/SocialMedia.list,SocialMedia,update-interval=604800
+# > Telegram
+# RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list,Telegram,update-interval=604800
 
 # > Spotify
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/Spotify.list,Spotify,update-interval=604800
