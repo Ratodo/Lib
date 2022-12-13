@@ -10,9 +10,6 @@ DOMAIN-KEYWORD,flyert,DIRECT
 # > Apple
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list,Apple,update-interval=604800
 
-# > Telegram
-RULE-SET,https://raw.githubusercontent.com/Ratodo/Lib/master/Surge/Telegram.list,Telegram,update-interval=604800
-
 # > Spotify
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/Spotify.list,Spotify,update-interval=604800
 
