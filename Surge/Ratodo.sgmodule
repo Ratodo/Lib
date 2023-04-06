@@ -16,9 +16,6 @@ DOMAIN-KEYWORD,flyert,DIRECT
 # > Apple
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list,DIRECT,update-interval=604800
 
-# > Spotify
-RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/Spotify.list,DIRECT,update-interval=604800
-
 [URL Rewrite]
 
 # Redirect Google Search Service
