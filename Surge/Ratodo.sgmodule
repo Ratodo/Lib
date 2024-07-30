@@ -10,7 +10,8 @@ always-real-ip = %INSERT% *.lan, cable.auth.com, *.msftconnecttest.com, *.msftnc
 
 [Host]
 github.com = server:1.1.1.1
-raw.githubusercontent.com = server:1.1.1.1
+*.github.com = server:1.1.1.1
+*.githubusercontent.com = server:1.1.1.1
 
 [Rule]
 # > Personal Setting
