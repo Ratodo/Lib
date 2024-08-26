@@ -19,9 +19,6 @@ DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-KEYWORD,ottdns,DIRECT
 
-# > Apple
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list,DIRECT,update-interval=604800
-
 [URL Rewrite]
 
 # Redirect Google Search Service
