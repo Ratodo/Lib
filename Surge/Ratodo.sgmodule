@@ -2,13 +2,14 @@
 #!desc=A collection of personally organized scripts and other rules from Github.
 
 [General]
-# > 跳过代理
+# > Skip Proxy
 skip-proxy = %INSERT% localhost, *.local, passenger.t3go.cn, e.crashlytics.com, captive.apple.com, seed-sequoia.siri.apple.com, sequoia.apple.com, www.baidu.com, yunbusiness.ccb.com, www.abchina.com.cn, mbank.psbc.com, ibfp.psbc.com, mbs.boc.cn
 
 # > Always Real IP Hosts
 always-real-ip = %INSERT% *.lan, cable.auth.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, localhost.*.qq.com, music.163.com, *.music.163.com, *.126.net, y.qq.com, *.y.qq.com, streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, *.mcdn.bilivideo.cn, *.cmpassport.com, open.e.189.cn, *.cmbchina.com, pool.ntp.org, *.pool.ntp.org, ntp.*.com, time.*.com, ntp?.*.com, time?.*.com, time.*.gov, time.*.edu.cn, *.ntp.org.cn, PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*, easy-login.10099.com.cn
 
 [Host]
+# > Change DNS - Github
 github.com = server:1.1.1.1
 *.github.com = server:1.1.1.1
 *.githubusercontent.com = server:1.1.1.1
@@ -16,8 +17,10 @@ github.com = server:1.1.1.1
 [Rule]
 # > Personal Setting
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
+DOMAIN-SUFFIX,iill.top,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-KEYWORD,ottdns,DIRECT
+DOMAIN-KEYWORD,ratodo,DIRECT
 
 [URL Rewrite]
 
