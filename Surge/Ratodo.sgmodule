@@ -14,6 +14,10 @@ DOMAIN-SUFFIX,iill.top,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-KEYWORD,ottdns,DIRECT
 DOMAIN-KEYWORD,ratodo,DIRECT
+IP-ASN,31898,DIRECT //Oracle
+IP-ASN,40065,DIRECT //CNSERVERS
+IP-ASN,396073,DIRECT //VMSHELL
+IP-CIDR,35.212.238.0/24，DIRECT //GCP
 
 # > TV Stream
 DOMAIN-SUFFIX,dnsany.com,DIRECT
@@ -24,11 +28,6 @@ DOMAIN-SUFFIX,gitv.tv,DIRECT
 DOMAIN-SUFFIX,cctv.cn,DIRECT
 DOMAIN-SUFFIX,yangshipin.cn,DIRECT
 DOMAIN-SUFFIX,gcable.cn,DIRECT
-IP-CIDR,183.206.0.0/15,DIRECT,no-resolve
-IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
-IP-CIDR,27.36.0.0/14,DIRECT,no-resolve
-IP-CIDR,183.238.66.0/24,DIRECT,no-resolve
-
 DOMAIN-SUFFIX,livednow.com,Proxy
 DOMAIN-SUFFIX,orz-7.com,Proxy
 DOMAIN-SUFFIX,4gtv.tv,Proxy
@@ -41,7 +40,6 @@ DOMAIN-SUFFIX,thetvapp.to,Proxy
 
 
 [URL Rewrite]
-
 # Redirect Google Search Service
 ^https?:\/\/www\.g(oogle)?\.cn https://www.google.com 307
 
