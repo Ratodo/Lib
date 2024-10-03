@@ -12,12 +12,30 @@ github.com = server:1.1.1.1
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-SUFFIX,iill.top,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
-DOMAIN-KEYWORD,ottdns,DIRECT
 DOMAIN-KEYWORD,ratodo,DIRECT
 IP-ASN,31898,DIRECT //Oracle
 IP-ASN,40065,DIRECT //CNSERVERS
 IP-ASN,396073,DIRECT //VMSHELL
 IP-CIDR,35.212.238.0/24，DIRECT //GCP
+RULE-SET,https://raw.githubusercontent.com/axinhouzilaoyue/myScript/main/rules/talkatoneAdBlock.list,REJECT,update-interval=604800
+
+# > Sukka -> https://blog.skk.moe/post/i-have-my-unique-surge-setup
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf,REJECT-NO-DROP,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-drop.conf,REJECT-DROP,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/global.conf,Proxy,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/domestic.conf,DIRECT,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP
+RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxy
+PROCESS-NAME,Telegram,REJECT-DROP
+RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT
 
 # > TV Stream
 DOMAIN-SUFFIX,dnsany.com,DIRECT
