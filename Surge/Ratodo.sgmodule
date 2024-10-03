@@ -19,6 +19,23 @@ IP-ASN,396073,DIRECT //VMSHELL
 IP-CIDR,35.212.238.0/24,DIRECT //GCP
 RULE-SET,https://raw.githubusercontent.com/axinhouzilaoyue/myScript/main/rules/talkatoneAdBlock.list,REJECT,update-interval=604800
 
+# > TV Stream
+DOMAIN-SUFFIX,dnsany.com,DIRECT
+DOMAIN-SUFFIX,cmvideo.cn,DIRECT
+DOMAIN-SUFFIX,chinamobile.com,DIRECT
+DOMAIN-SUFFIX,mobaibox.com,DIRECT
+DOMAIN-SUFFIX,gitv.tv,DIRECT
+DOMAIN-SUFFIX,cctv.cn,DIRECT
+DOMAIN-SUFFIX,yangshipin.cn,DIRECT
+DOMAIN-SUFFIX,gcable.cn,DIRECT
+DOMAIN-SUFFIX,livednow.com,Proxy
+DOMAIN-SUFFIX,orz-7.com,Proxy
+DOMAIN-SUFFIX,4gtv.tv,Proxy
+DOMAIN-SUFFIX,hinet.net,Proxy
+DOMAIN-SUFFIX,ofiii.com,Proxy
+DOMAIN-SUFFIX,mytvsuper.com,Proxy
+DOMAIN-SUFFIX,thetvapp.to,Proxy
+
 # > Sukka
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT,extended-matching
 RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,extended-matching
@@ -36,25 +53,6 @@ PROCESS-NAME,Telegram,REJECT-DROP
 RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
 RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,DIRECT
 RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT
-
-# > TV Stream
-DOMAIN-SUFFIX,dnsany.com,DIRECT
-DOMAIN-SUFFIX,cmvideo.cn,DIRECT
-DOMAIN-SUFFIX,chinamobile.com,DIRECT
-DOMAIN-SUFFIX,mobaibox.com,DIRECT
-DOMAIN-SUFFIX,gitv.tv,DIRECT
-DOMAIN-SUFFIX,cctv.cn,DIRECT
-DOMAIN-SUFFIX,yangshipin.cn,DIRECT
-DOMAIN-SUFFIX,gcable.cn,DIRECT
-DOMAIN-SUFFIX,livednow.com,Proxy
-DOMAIN-SUFFIX,orz-7.com,Proxy
-DOMAIN-SUFFIX,4gtv.tv,Proxy
-DOMAIN-SUFFIX,hinet.net,Proxy
-DOMAIN-SUFFIX,ofiii.com,Proxy
-DOMAIN-SUFFIX,googlevideo.com,Proxy
-DOMAIN-SUFFIX,youtube.com,Proxy
-DOMAIN-SUFFIX,mytvsuper.com,Proxy
-DOMAIN-SUFFIX,thetvapp.to,Proxy
 
 [URL Rewrite]
 # Redirect Google Search Service
