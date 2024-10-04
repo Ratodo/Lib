@@ -17,6 +17,7 @@ IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-CIDR,35.212.238.0/24,DIRECT,no-resolve //GCP
 DOMAIN-SUFFIX,segment.io,Proxy //Arc
+DOMAIN-SUFFIX,browser-intake-datadoghq.com,Proxy //Arc
 RULE-SET,https://raw.githubusercontent.com/axinhouzilaoyue/myScript/main/rules/talkatoneAdBlock.list,REJECT,update-interval=604800
 
 # > TV Stream
