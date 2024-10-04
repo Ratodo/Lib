@@ -10,13 +10,13 @@ github.com = server:1.1.1.1
 [Rule]
 # > Personal Setting
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
-DOMAIN-SUFFIX,iill.top,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
-DOMAIN-KEYWORD,ratodo,DIRECT
+DOMAIN-SUFFIX,ratodo.com,DIRECT
 IP-ASN,31898,DIRECT,no-resolve //Oracle
 IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-CIDR,35.212.238.0/24,DIRECT,no-resolve //GCP
+DOMAIN-SUFFIX,segment.io,Proxy //Arc
 RULE-SET,https://raw.githubusercontent.com/axinhouzilaoyue/myScript/main/rules/talkatoneAdBlock.list,REJECT,update-interval=604800
 
 # > TV Stream
@@ -39,6 +39,7 @@ DOMAIN-SUFFIX,thetvapp.to,Proxy
 # > Sukka
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT,extended-matching
 RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP
 RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf,REJECT-NO-DROP,extended-matching
 RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-drop.conf,REJECT-DROP,extended-matching
 RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cdn.conf,DIRECT
@@ -47,7 +48,6 @@ RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
 RULE-SET,https://ruleset.skk.moe/List/non_ip/global.conf,Proxy,extended-matching
 RULE-SET,https://ruleset.skk.moe/List/non_ip/domestic.conf,DIRECT,extended-matching
 RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP
 RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxy
 PROCESS-NAME,Telegram,REJECT-DROP
 RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
