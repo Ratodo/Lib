@@ -13,9 +13,9 @@ DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-SUFFIX,iill.top,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-KEYWORD,ratodo,DIRECT
-IP-ASN,31898,DIRECT //Oracle
-IP-ASN,40065,DIRECT //CNSERVERS
-IP-ASN,396073,DIRECT //VMSHELL
+IP-ASN,31898,DIRECT,no-resolve //Oracle
+IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
+IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-CIDR,35.212.238.0/24,DIRECT,no-resolve //GCP
 RULE-SET,https://raw.githubusercontent.com/axinhouzilaoyue/myScript/main/rules/talkatoneAdBlock.list,REJECT,update-interval=604800
 
