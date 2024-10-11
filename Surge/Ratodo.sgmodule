@@ -3,18 +3,9 @@
 
 [Host]
 # > Change DNS
-github.com = server:tls://1.1.1.1 //Github
-*.github.com = server:tls://1.1.1.1 //Github
-*.githubusercontent.com = server:tls://1.1.1.1 //Github
-*.qq.com = server:tls://223.5.5.5 // QQ
-*.qlogo.cn = server:tls://223.5.5.5 // 腾讯头像
-*.qpic.cn = server:tls://223.5.5.5 // 腾讯图片
-*.weixin.qq.com = server:tls://223.5.5.5 // 微信
-*.wx.qq.com = server:tls://223.5.5.5 // 微信
-*.weixin.com = server:tls://223.5.5.5 // 微信
-*.weixinbridge.com = tls://223.5.5.5 // 微信公众平台
-*.wechat.com = server:tls://223.5.5.5 // WeChat
-*.servicewechat.com = server:tls://223.5.5.5 // 微信小程序
+github.com = server:1.1.1.1 //Github
+*.github.com = server:1.1.1.1 //Github
+*.githubusercontent.com = server:1.1.1.1 //Github
 
 [Rule]
 # > Personal Setting
