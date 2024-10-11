@@ -2,10 +2,19 @@
 #!desc=A collection of personally organized scripts and other rules from Github.
 
 [Host]
-# > Change DNS - Github
-github.com = server:1.1.1.1
-*.github.com = server:1.1.1.1
-*.githubusercontent.com = server:1.1.1.1
+# > Change DNS
+github.com = server:tls://1.1.1.1 //Github
+*.github.com = server:tls://1.1.1.1 //Github
+*.githubusercontent.com = server:tls://1.1.1.1 //Github
+*.qq.com = server:tls://223.5.5.5 // QQ
+*.qlogo.cn = server:tls://223.5.5.5 // 腾讯头像
+*.qpic.cn = server:tls://223.5.5.5 // 腾讯图片
+*.weixin.qq.com = server:tls://223.5.5.5 // 微信
+*.wx.qq.com = server:tls://223.5.5.5 // 微信
+*.weixin.com = server:tls://223.5.5.5 // 微信
+*.weixinbridge.com = tls://223.5.5.5 // 微信公众平台
+*.wechat.com = server:tls://223.5.5.5 // WeChat
+*.servicewechat.com = server:tls://223.5.5.5 // 微信小程序
 
 [Rule]
 # > Personal Setting
@@ -17,23 +26,6 @@ IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-CIDR,35.212.238.0/24,DIRECT,no-resolve //GCP
 DOMAIN-SUFFIX,segment.io,Proxy //Arc
-
-# > TV Stream
-DOMAIN-SUFFIX,dnsany.com,DIRECT
-DOMAIN-SUFFIX,cmvideo.cn,DIRECT
-DOMAIN-SUFFIX,chinamobile.com,DIRECT
-DOMAIN-SUFFIX,mobaibox.com,DIRECT
-DOMAIN-SUFFIX,gitv.tv,DIRECT
-DOMAIN-SUFFIX,cctv.cn,DIRECT
-DOMAIN-SUFFIX,yangshipin.cn,DIRECT
-DOMAIN-SUFFIX,gcable.cn,DIRECT
-DOMAIN-SUFFIX,livednow.com,Proxy
-DOMAIN-SUFFIX,orz-7.com,Proxy
-DOMAIN-SUFFIX,4gtv.tv,Proxy
-DOMAIN-SUFFIX,hinet.net,Proxy
-DOMAIN-SUFFIX,ofiii.com,Proxy
-DOMAIN-SUFFIX,mytvsuper.com,Proxy
-DOMAIN-SUFFIX,thetvapp.to,Proxy
 
 # > Sukka
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT,extended-matching
