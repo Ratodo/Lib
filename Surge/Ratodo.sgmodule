@@ -1,21 +1,6 @@
 #!name=Personal Module - By Ratodo
 #!desc=A collection of personally organized scripts and other rules from Github.
 
-[Host]
-# > Change DNS
-github.com = server:1.1.1.1 //Github
-*.github.com = server:1.1.1.1 //Github
-*.githubusercontent.com = server:1.1.1.1 //Github
-*.qq.com = server:101.226.4.6 // QQ
-*.qlogo.cn = server:101.226.4.6 // 腾讯头像
-*.qpic.cn = server:101.226.4.6 // 腾讯图片
-*.weixin.qq.com = server:101.226.4.6 // 微信
-*.wx.qq.com = server:101.226.4.6 // 微信
-*.weixin.com = server:101.226.4.6 // 微信
-*.weixinbridge.com = server:101.226.4.6 // 微信公众平台
-*.wechat.com = server:101.226.4.6 // WeChat
-*.servicewechat.com = server:101.226.4.6 // 微信小程序
-
 [Rule]
 # > Personal Setting
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
@@ -26,28 +11,6 @@ IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-CIDR,35.212.238.0/24,DIRECT,no-resolve //GCP
 DOMAIN-SUFFIX,segment.io,Proxy //Arc
-
-# > Sukka
-DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP
-RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf,REJECT-NO-DROP,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-drop.conf,REJECT-DROP,extended-matching
-DOMAIN-SET,https://ruleset.skk.moe/List/domainset/cdn.conf,Proxy,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/cdn.conf,Proxy,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cdn.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,United States,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/global.conf,Proxy,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/domestic.conf,DIRECT,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxy
-PROCESS-NAME,Telegram,REJECT-DROP
-RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/non_ip/direct.conf,DIRECT,extended-matching
-RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,DIRECT
-RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT
 
 [URL Rewrite]
 # Redirect Google Search Service
