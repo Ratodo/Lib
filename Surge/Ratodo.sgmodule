@@ -6,6 +6,7 @@
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-SUFFIX,ratodo.com,DIRECT
+DOMAIN-SUFFIX,rato.do,DIRECT
 IP-ASN,31898,DIRECT,no-resolve //Oracle
 IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
@@ -15,8 +16,6 @@ DOMAIN-SUFFIX,segment.io,Proxy //Arc
 [URL Rewrite]
 # Redirect Google Search Service
 ^https?:\/\/www\.g(oogle)?\.cn https://www.google.com 307
-# Short URL
-^http:\/\/skk\/(.*?)$ https://ruleset.skk.moe/List/$1.conf 302
 
 [MITM]
 hostname = %APPEND% www.g.cn, www.google.cn
