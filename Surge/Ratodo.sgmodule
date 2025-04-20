@@ -1,17 +1,20 @@
 #!name=Personal Module - By Ratodo
 #!desc=A collection of personally organized scripts and other rules from Github.
 
+[General]
+always-real-ip = %APPEND% dns.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.turn.twilio.com, *.stun.twilio.com, stun.syncthing.net, stun.*, *.sslip.io, *.nip.io
+
 [Rule]
 # > Personal Setting
-DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
+DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-SUFFIX,ratodo.com,DIRECT
 DOMAIN-SUFFIX,rato.do,DIRECT
 IP-ASN,31898,DIRECT,no-resolve //Oracle
 IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
+IP-ASN,61112,DIRECT,no-resolve //Akile
 IP-CIDR,35.212.238.0/24,DIRECT,no-resolve //GCP
-DOMAIN-SUFFIX,segment.io,Proxy //Arc
 
 [URL Rewrite]
 # Redirect Google Search Service
