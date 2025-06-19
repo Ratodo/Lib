@@ -14,7 +14,9 @@ IP-ASN,31898,DIRECT,no-resolve //Oracle
 IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-ASN,61112,DIRECT,no-resolve //Akile
-IP-CIDR,35.212.238.0/24,DIRECT,no-resolve //GCP
+DOMAIN-SUFFIX,ipv6.ddnspod.com,DIRECT // IPV6-Test
+PROCESS-NAME,/opt/homebrew/Cellar/cloudflared/2025.4.0/bin/cloudflared,DIRECT //Cloudflared
+RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,HuaCloud,extended-matching //AI
 
 [URL Rewrite]
 # Redirect Google Search Service
