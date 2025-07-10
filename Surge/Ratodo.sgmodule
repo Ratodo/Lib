@@ -17,7 +17,28 @@ IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-ASN,152672,DIRECT,no-resolve //AiYun
 DOMAIN-SUFFIX,ipv6.ddnspod.com,DIRECT // IPV6-Test
 PROCESS-NAME,/opt/homebrew/Cellar/cloudflared/2025.4.0/bin/cloudflared,DIRECT //Cloudflared
-RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,HuaCloud,extended-matching //AI
+
+# > Sukka  https://blog.skk.moe/post/i-have-my-unique-surge-setup/
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf,REJECT-NO-DROP,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-drop.conf,REJECT-DROP,extended-matching
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/cdn.conf,Proxy,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/cdn.conf,Proxy,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/telegram.conf,Proxy,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_services.conf,Proxy,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft.conf,Proxy,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/global.conf,Proxy,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/non_ip/domestic.conf,DIRECT,extended-matching
+RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP
+RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxy
+PROCESS-NAME,Telegram,REJECT-DROP
+RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/direct.conf,DIRECT,extended-matching
 
 [URL Rewrite]
 # Redirect Google Search Service
