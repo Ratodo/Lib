@@ -6,16 +6,20 @@ always-real-ip = %APPEND% dns.msftncsi.com, *.srv.nintendo.net, *.stun.playstati
 
 [Rule]
 # > Personal Setting
+DOMAIN,us4.staryuki.me,Proxy
+DOMAIN,c1.staryuki.me,DIRECT
+DOMAIN,fast-1.staryuki.me.kiven.cc,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-SUFFIX,ratodo.com,DIRECT
 DOMAIN-SUFFIX,rato.do,DIRECT
 DOMAIN-SUFFIX,qixin.com,DIRECT
+DOMAIN-SUFFIX,woobx.cn,DIRECT
+DOMAIN-SUFFIX,ipv6.ddnspod.com,DIRECT // IPV6-Test
 IP-ASN,31898,DIRECT,no-resolve //Oracle
 IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
 IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-ASN,152672,DIRECT,no-resolve //AiYun
-DOMAIN-SUFFIX,ipv6.ddnspod.com,DIRECT // IPV6-Test
 PROCESS-NAME,/opt/homebrew/Cellar/cloudflared/2025.4.0/bin/cloudflared,DIRECT //Cloudflared
 
 # > Sukka  https://blog.skk.moe/post/i-have-my-unique-surge-setup/
