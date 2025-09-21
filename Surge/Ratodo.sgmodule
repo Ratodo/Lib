@@ -6,9 +6,6 @@ always-real-ip = %APPEND% dns.msftncsi.com, *.srv.nintendo.net, *.stun.playstati
 
 [Rule]
 # > Personal Setting
-DOMAIN,us4.staryuki.me,Proxy
-DOMAIN,c1.staryuki.me,DIRECT
-DOMAIN,fast-1.staryuki.me.kiven.cc,DIRECT
 DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-SUFFIX,ratodo.com,DIRECT
@@ -16,11 +13,11 @@ DOMAIN-SUFFIX,rato.do,DIRECT
 DOMAIN-SUFFIX,qixin.com,DIRECT
 DOMAIN-SUFFIX,woobx.cn,DIRECT
 DOMAIN-SUFFIX,ipv6.ddnspod.com,DIRECT // IPV6-Test
+IP-CIDR,50.114.114.0/24,DIRECT,no-resolve //Evoxt
 IP-ASN,31898,DIRECT,no-resolve //Oracle
-IP-ASN,40065,DIRECT,no-resolve //CNSERVERS
-IP-ASN,396073,DIRECT,no-resolve //VMSHELL
 IP-ASN,152672,DIRECT,no-resolve //AiYun
 PROCESS-NAME,/opt/homebrew/Cellar/cloudflared/2025.4.0/bin/cloudflared,DIRECT //Cloudflared
+OR,((DOMAIN-SUFFIX,zafinsvc.com), (DOMAIN-SUFFIX,zajourney.com), (DOMAIN-SUFFIX,za.group), (DOMAIN-KEYWORD,bochk)),DIRECT // HK Bank
 
 # > Sukka  https://blog.skk.moe/post/i-have-my-unique-surge-setup/
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT
