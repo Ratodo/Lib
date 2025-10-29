@@ -15,6 +15,7 @@ IP-ASN,31898,DIRECT,no-resolve //Oracle
 IP-ASN,152672,DIRECT,no-resolve //AiYun
 PROCESS-NAME,/opt/homebrew/Cellar/cloudflared/2025.4.0/bin/cloudflared,DIRECT //Cloudflared
 OR,((DOMAIN-SUFFIX,zafinsvc.com), (DOMAIN-SUFFIX,zajourney.com), (DOMAIN-SUFFIX,za.group), (DOMAIN-KEYWORD,bochk)),DIRECT // HK Bank
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/UnionPay/UnionPay.list,DIRECT //UnionPay
 
 # > Sukka  https://blog.skk.moe/post/i-have-my-unique-surge-setup/
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,AdBlock
