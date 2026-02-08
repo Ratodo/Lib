@@ -2,6 +2,7 @@
 #!desc=A collection of personally organized scripts and other rules from Github.
 
 [General]
+skip-proxy = %APPEND% 127.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 162.14.0.0/16, 211.99.96.0/19, 162.159.192.0/24, 162.159.193.0/24, 162.159.195.0/24, fc00::/7, fe80::/10, localhost, *.local, captive.apple.com, passenger.t3go.cn, *.ccb.com, wxh.wo.cn, www.abchina.com.cn, *.ccb.com.cn, *.zjtlcb.com
 always-real-ip = %APPEND% dns.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.turn.twilio.com, *.stun.twilio.com, stun.syncthing.net, stun.*, *.sslip.io, *.nip.io
 
 [Rule]
@@ -10,11 +11,34 @@ DOMAIN-KEYWORD,flyert,DIRECT
 DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-SUFFIX,ratodo.com,DIRECT
 DOMAIN-SUFFIX,rato.do,DIRECT
-DOMAIN-SUFFIX,qixin.com,DIRECT
 IP-ASN,31898,DIRECT,no-resolve //Oracle
 IP-ASN,152672,DIRECT,no-resolve //AiYun
 OR,((DOMAIN-SUFFIX,zafinsvc.com), (DOMAIN-SUFFIX,zajourney.com), (DOMAIN-SUFFIX,za.group), (DOMAIN-KEYWORD,bochk)),DIRECT // HK Bank
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/UnionPay/UnionPay.list,DIRECT //UnionPay
+
+# > Sukka's Ruleset
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,AdBlock,extended-matching //广告拦截
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,AdBlock,extended-matching //广告拦截
+RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP //广告拦截
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf,REJECT-NO-DROP,extended-matching //广告拦截
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-drop.conf,REJECT-DROP,extended-matching //广告拦截
+
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/cdn.conf,GlobalCDN,extended-matching //国外CDN服务
+RULE-SET,https://ruleset.skk.moe/List/non_ip/cdn.conf,GlobalCDN,extended-matching //国外CDN服务
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cdn.conf,DIRECT //Apple国内CDN
+RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT //Microsoft国内CDN
+RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT //Apple国内服务
+RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,Proxy,extended-matching //AI相关服务
+RULE-SET,https://ruleset.skk.moe/List/non_ip/global.conf,Proxy,extended-matching //常见国际网站
+RULE-SET,https://ruleset.skk.moe/List/non_ip/domestic.conf,DIRECT,extended-matching //常见国内网站
+RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT //本地服务
+RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxy //Telegram
+PROCESS-NAME,Telegram,REJECT-DROP //Telegram
+RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT //本地服务
+RULE-SET,https://ruleset.skk.moe/List/non_ip/direct.conf,DIRECT,extended-matching //直连服务
+RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,DIRECT //常见国内网站
+RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT //国内ipv4
+RULE-SET,https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf,DIRECT //国内ipv6
 
 [URL Rewrite]
 # Redirect Google Search Service
