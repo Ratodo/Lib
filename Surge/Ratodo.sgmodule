@@ -31,10 +31,8 @@ RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT //Apple国内�
 RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,Proxy,extended-matching //AI相关服务
 RULE-SET,https://ruleset.skk.moe/List/non_ip/global.conf,Proxy,extended-matching //常见国际网站
 RULE-SET,https://ruleset.skk.moe/List/non_ip/domestic.conf,DIRECT,extended-matching //常见国内网站
-RULE-SET,https://ruleset.skk.moe/List/non_ip/lan.conf,DIRECT //本地服务
 RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxy //Telegram
 PROCESS-NAME,Telegram,REJECT-DROP //Telegram
-RULE-SET,https://ruleset.skk.moe/List/ip/lan.conf,DIRECT //本地服务
 RULE-SET,https://ruleset.skk.moe/List/non_ip/direct.conf,DIRECT,extended-matching //直连服务
 RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,DIRECT //常见国内网站
 RULE-SET,https://ruleset.skk.moe/List/ip/china_ip.conf,DIRECT //国内ipv4
