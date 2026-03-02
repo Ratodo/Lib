@@ -17,12 +17,6 @@ OR,((DOMAIN-SUFFIX,zafinsvc.com), (DOMAIN-SUFFIX,zajourney.com), (DOMAIN-SUFFIX,
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/UnionPay/UnionPay.list,DIRECT //UnionPay
 
 # > Sukka's Ruleset
-DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,AdBlock,extended-matching //广告拦截
-RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,AdBlock,extended-matching //广告拦截
-RULE-SET,https://ruleset.skk.moe/List/ip/reject.conf,REJECT-DROP //广告拦截
-RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-no-drop.conf,REJECT-NO-DROP,extended-matching //广告拦截
-RULE-SET,https://ruleset.skk.moe/List/non_ip/reject-drop.conf,REJECT-DROP,extended-matching //广告拦截
-
 DOMAIN-SET,https://ruleset.skk.moe/List/domainset/cdn.conf,GlobalCDN,extended-matching //国外CDN服务
 RULE-SET,https://ruleset.skk.moe/List/non_ip/cdn.conf,GlobalCDN,extended-matching //国外CDN服务
 RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cdn.conf,DIRECT //Apple国内CDN
