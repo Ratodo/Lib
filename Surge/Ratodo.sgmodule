@@ -12,17 +12,15 @@ DOMAIN-SUFFIX,19991222.xyz,DIRECT
 DOMAIN-SUFFIX,ratodo.com,DIRECT
 DOMAIN-SUFFIX,rato.do,DIRECT
 IP-ASN,31898,DIRECT,no-resolve //Oracle
-IP-ASN,152672,DIRECT,no-resolve //AiYun
 OR,((DOMAIN-SUFFIX,zafinsvc.com), (DOMAIN-SUFFIX,zajourney.com), (DOMAIN-SUFFIX,za.group), (DOMAIN-KEYWORD,bochk)),DIRECT // HK Bank
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/UnionPay/UnionPay.list,DIRECT //UnionPay
 
 # > Sukka's Ruleset
-DOMAIN-SET,https://ruleset.skk.moe/List/domainset/cdn.conf,GlobalCDN,extended-matching //国外CDN服务
-RULE-SET,https://ruleset.skk.moe/List/non_ip/cdn.conf,GlobalCDN,extended-matching //国外CDN服务
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/cdn.conf,Proxy,extended-matching //国外CDN服务
+RULE-SET,https://ruleset.skk.moe/List/non_ip/cdn.conf,Proxy,extended-matching //国外CDN服务
 RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cdn.conf,DIRECT //Apple国内CDN
 RULE-SET,https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf,DIRECT //Microsoft国内CDN
 RULE-SET,https://ruleset.skk.moe/List/non_ip/apple_cn.conf,DIRECT //Apple国内服务
-RULE-SET,https://ruleset.skk.moe/List/non_ip/ai.conf,Proxy,extended-matching //AI相关服务
 RULE-SET,https://ruleset.skk.moe/List/non_ip/global.conf,Proxy,extended-matching //常见国际网站
 RULE-SET,https://ruleset.skk.moe/List/non_ip/domestic.conf,DIRECT,extended-matching //常见国内网站
 RULE-SET,https://ruleset.skk.moe/List/ip/telegram.conf,Proxy //Telegram
